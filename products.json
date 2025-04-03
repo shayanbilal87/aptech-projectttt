@@ -1,0 +1,26 @@
+[
+    {
+        "image": "../IMAGES/Math Course.png",
+        "title": "Mathematics",
+        "price": "999",
+        "link": "#"
+    },
+    {
+        "image": "IMAGES/Physics Course.png",
+        "title": "Physics",
+        "price": "1499",
+        "link": "#"
+    },
+    {
+        "image": "IMAGES/IT Course.png",
+        "title": "IT Program",
+        "price": "799",
+        "link": "#"
+    },
+    {
+        "image": "IMAGES/Python Course.png",
+        "title": "Python",
+        "price": "1299",
+        "link": "#"
+    }
+]

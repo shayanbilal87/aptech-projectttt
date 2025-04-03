@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bootstrap Carousel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin-top: 100px;
+        }
+        .carousel,
+        .carousel-inner,
+        .carousel-item,
+        .container,
+        .fill {
+            height: 100%;
+            min-height: 400px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .slide-wrapper {
+            display: inline-block;
+            width: 100%;
+        }
+        .carousel-indicators {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            right: 10px;
+            left: auto;
+        }
+        .carousel-indicators li {
+            display: block;
+            margin-bottom: 5px;
+            border: 1px solid #00a199;
+            cursor: pointer;
+        }
+        .carousel-indicators .active {
+            background: #00a199;
+        }
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
+            transform: translate3d(0, 0, 0);
+        }
+        .carousel-item-next,
+        .active.carousel-item-end {
+            transform: translate3d(0, 100%, 0);
+        }
+        .carousel-item-prev,
+        .active.carousel-item-start {
+            transform: translate3d(0, -100%, 0);
+        }
+    </style>
+</head>
+<body>
+    <section class="slide-wrapper">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="fill" style="background-color:#48c3af;">1</div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="fill" style="background-color:#b33f4a;">2</div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="fill" style="background-color:#7fc2f4;">3</div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="fill" style="background-color:#e47794;">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $('#myCarousel').carousel({
+                interval: false
+            });
+
+            // Enable swipe functionality
+            $("#myCarousel").on("touchstart", function(event) {
+                var yClick = event.originalEvent.touches[0].pageY;
+                $(this).one("touchmove", function(event) {
+                    var yMove = event.originalEvent.touches[0].pageY;
+                    if (Math.floor(yClick - yMove) > 1) {
+                        $("#myCarousel").carousel('next');
+                    } else if (Math.floor(yClick - yMove) < -1) {
+                        $("#myCarousel").carousel('prev');
+                    }
+                });
+                $("#myCarousel").on("touchend", function() {
+                    $(this).off("touchmove");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

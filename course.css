@@ -1,0 +1,397 @@
+/* General Styling */
+body {
+    background-color: #efe9e0;
+    color: #0f9e99;
+    font-family: Arial, sans-serif;
+}
+
+/* Course Header Section */
+/* .course-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.course-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+} */
+
+/* Course Info Section */
+/* .course-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-info div {
+    flex: 1;
+    padding: 10px;
+}
+
+.course-info .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+} */
+
+/* Enroll Button */
+/* .enroll-btn {
+    background-color: #0f9e99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enroll-btn:hover {
+    background-color: #0c7f79;
+} */
+
+/* Course Description */
+.course-description {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-description h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.course-description p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Key Concepts */
+.key-concepts {
+    margin-top: 20px;
+}
+
+.key-concepts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-concepts ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #0f9e99;
+    font-weight: bold;
+}
+
+/* Course Content Section */
+.course-content {
+    margin-top: 30px;
+}
+
+.course-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Course Modules */
+.module {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid #0f9e99;
+    cursor: pointer;
+}
+
+.module:hover {
+    background: #e1f5f4;
+}
+
+/* Join Us Section (Previously Footer) */
+.join-us {
+    background-color: #0f9e99;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.join-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.join-us p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.join-us .start-learning {
+    background-color: #fff;
+    color: #0f9e99;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.join-us .start-learning:hover {
+    background-color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Main Container */
+.course-info-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Course Info Box */
+.course-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9fafc;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Individual Info Boxes */
+.info-box {
+    text-align: center;
+    flex: 1;
+}
+
+/* Labels */
+.label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Price Text */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+.status-btn, .enroll-btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.status-btn:hover, .enroll-btn:hover {
+    background-color: #000000;
+}
+
+/* Vertical Divider */
+.divider {
+    width: 2px;
+    height: 50px;
+    background-color: #ddd;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .course-info {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .divider {
+        display: none;
+    }
+    .info-box {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #efe9e0 !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #efe9e0fe;
+}
+
+.getbutton{
+    background-color: #0f9e99;
+    color: #efe9e0;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+}
+.getbutton:hover{
+    background-color: #efe9e0;
+    color: #0f9e99;
+}
+/* Dropdown on Hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Dropdown Styling */
+.dropdown-menu {
+    background: #efe9e0; /* Change Background Color */
+    border-radius: 8px; /* Rounded Borders */
+    padding: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 180px; /* Adjust width */
+}
+
+/* Dropdown Links */
+.dropdown-menu .dropdown-item {
+    color: #0f9e99;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+/* Hover Effect on Dropdown Items */
+.dropdown-menu .dropdown-item:hover {
+    background: #efe9e0; /* Darker blue on hover */
+    color: #0f9e99;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #0f9e99;
+    background-color: #efe9e0 !important;
+    color: #0f9e99 !important;
+    padding: 50px 0;
+}
+footer.footer-custom {
+    background-color: #efe9e0 !important;
+    color: #0f9e99 !important; /* Ensure text color is applied */
+}
+
+
+footer a {
+    color: #0f9e99;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #efe9e0;
+    text-decoration: underline;
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    color: #0f9e99;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #0f9e99; /* Change color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .social-icons {
+        text-align: center;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .d-flex input {
+        margin-bottom: 10px;
+    }
+}
+.banner .btn {
+    margin-right: 10px;
+}
+.banner-btn {
+    background-color: #0f9e99; /* Custom Orange */
+    color: #efe9e0;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner-btn:hover {
+    background-color: #efe9e0; /* Darker Orange */
+    color: #0f9e99;
+    transform: scale(1.08); /* Slight Zoom */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-btn-outline {
+    background: transparent;
+    color: #efe9e0;
+    border: 2px solid #0f9e99;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.banner-btn-outline:hover {
+    background-color: #0f9e99;
+    color: #efe9e0;
+    transform: scale(1.05);
+}
+
+.joinsection {
+    height: 50vh;
+    background-color: #0f9e99;
+    color: #efe9e0;
+    
+    /* Centering */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+}
+
+/* Remove extra class selectors */
+/* .joinsectionh2, .joinsectionp, .joinsectionbtn {
+    margin: 10px 0;
+} */

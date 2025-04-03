@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.flip-box-front.math {
+    background-image: url("IMAGES/math.png");
+}
+
+.flip-box-front.physics {
+    background-image: url("IMAGES/physics.png");
+}
+
+.flip-box-front.it {
+    background-image: url("IMAGES/it.png");
+}
+/* Courses Section */
+#courses .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Row to align boxes properly */
+#courses .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 100px;
+}
+
+
+/* Flip Box */
+.flip-box {
+    width: 450px;
+    height: 50vh;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 7vh;
+}
+
+/* Inner flip effect */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: inherit;
+}
+
+/* Hover Effect */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: inherit;
+}
+
+/* Front Side */
+.flip-box-front {
+    /* background-color: #0f9e99; */
+    background-image: url("IMAGES/Python Course.png");
+
+    color: #efe9e0 ;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Back Side */
+.flip-box-back {
+    background-color: #efe9e0;
+    color: #0f9e99;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    z-index: 1;
+    border: 2px solid #0f9e99;
+    padding: 20px;
+}
+
+</style>
+<body>
+        <!-- Flip Box 1 -->
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front math">
+            <h2>Mathematics</h2>
+        </div>
+        <div class="flip-box-back">
+            <p>Complete math course...</p>
+            <button class="btn banner-btn mt-3">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Flip Box 2 -->
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front physics">
+            <h2>Physics</h2>
+        </div>
+        <div class="flip-box-back">
+            <p>Complete physics course...</p>
+            <button class="btn banner-btn mt-3">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Flip Box 3 -->
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front it">
+            <h2>IT Program</h2>
+        </div>
+        <div class="flip-box-back">
+            <p>Complete IT course...</p>
+            <button class="btn banner-btn mt-3">Learn More</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
