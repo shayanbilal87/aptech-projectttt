@@ -1,6 +1,6 @@
 [
     {
-        "image": "../IMAGES/Math Course.png",
+        "image": "/IMAGES/Math Course.png",
         "title": "Mathematics",
         "price": "999",
         "link": "#"

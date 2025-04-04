@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Body (Global Style) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #efe9e0;
+    color: #0f9e99;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+
+/* NavBar (Website Header) */
+.navbar {
+    background-color: #efe9e0 !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #efe9e0fe;
+}
+
+.getbutton{
+    background-color: #0f9e99;
+    color: #efe9e0;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.getbutton:hover{
+    background-color: #ffffff;
+    color: #0f9e99;
+}
+/* Dropdown on Hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Dropdown Styling */
+.dropdown-menu {
+    background: #efe9e0;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+/* Dropdown Links */
+.dropdown-menu .dropdown-item {
+    color: #0f9e99;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+/* Hover Effect on Dropdown Items */
+.dropdown-menu .dropdown-item:hover {
+    background: #0f9e99;
+    color: #efe9e0;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: #efe9e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.contact-info i {
+    font-size: 30px;
+    color: #0f9e99;
+}
+.form-container {
+    background: #efe9e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-container input,
+.form-container textarea {
+    background-color: #efe9e0;
+    border: 1.5px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #0f9e99;
+    box-shadow: 0 0 8px rgba(15, 158, 153, 0.2);
+}
+.form-container textarea {
+    resize: none;
+    min-height: 100px;
+}
+.form-container button {
+    background-color: #0f9e99;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+.form-container button:hover {
+    background-color: #0a7a75;
+    color: #fff;
+}
+
+
+/* Website Footer */
+.footer-custom {
+    background-color: #efe9e0;
+    color: #0f9e99;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Columns */
+.col-md-4 {
+    width: 100%;
+    max-width: 32%;
+    box-sizing: border-box;
+}
+
+/* Footer Left Section */
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0f9e99;
+}
+
+.footer-left h5 {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f9e99;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #0f9e99;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #08837e;
+}
+
+/* Middle Section */
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+    color: #0f9e99;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+    color: #08837e;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.footer-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-right input,
+.footer-right textarea {
+    background-color: #efe9e0;
+    border: 1.5px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 90%;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s ease-in-out;
+    margin: auto;
+}
+
+.footer-right input:focus,
+.footer-right textarea:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #0f9e99;
+    box-shadow: 0 0 8px rgba(15, 158, 153, 0.2);
+}
+
+.footer-right textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+ .footer-button {
+    background-color: #0f9e99;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 90%;
+}
+
+ .footer-button:hover {
+    background-color: #0a7a75;
+    color: #fff;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #0f9e99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-left .social-icons {
+        justify-content: center;
+    }
+
+    .footer-right input,
+    .footer-right textarea,
+    .banner-btn {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .footer-right form {
+        align-items: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
