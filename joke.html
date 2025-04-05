@@ -1,0 +1,17 @@
+function Sachbatao()
+        {
+            var eidi = document.getElementById("question").value ;
+            if(eidi >= 100 && eidi <= 500){
+                document.getElementById("result").innerHTML = "apne pass rakho" ;
+                document.getElementById("result").style.color =  "blue";
+            }
+            else if(eidi >= 501 && eidi <= 1000){
+                document.getElementById("result").innerHTML = "done" ;
+                document.getElementById("result").style.color =  "green";
+            }
+            else{
+                document.getElementById("result").innerHTML = "Astaghfirullah" ;
+                document.getElementById("result").style.color =  "red";
+            }
+            
+        }
