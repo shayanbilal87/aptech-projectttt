@@ -90,6 +90,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
+    border: solid 1px #0f9e99;
 }
 .form-container form {
     display: flex;

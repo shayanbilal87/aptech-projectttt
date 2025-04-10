@@ -601,11 +601,7 @@ a:hover {
       max-width: 50%;  
     }  
   }  
-@media (max-width : 576px) {
-    .col-sm-12 {
-        width: 100px;
-    }
-}
+
 
 
   /* Why Choose us */

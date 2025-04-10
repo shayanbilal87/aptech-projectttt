@@ -82,7 +82,7 @@ function loadProducts() {
 
             data.forEach((product, index) => {
                 content += `
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 col-sm-12">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
                         <div id="product-${index + 1}" class="single-product">
                             <div class="part-1" style="background-image: url('${product.image}');">
                                 <ul>
