@@ -233,10 +233,10 @@ body {
   .flip-box {
     background: transparent;
     width: 100%;
-    height: 200px;
+    height: 280px;
     perspective: 1000px;
   }
-
+  
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -245,11 +245,11 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-
+  
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg) rotateZ(5deg);
   }
-
+  
   .flip-box-front,
   .flip-box-back {
     position: absolute;
@@ -261,44 +261,140 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #0f9e99;
-    background-color: #fff;
-    box-shadow: 0 0 12px rgba(15, 158, 153, 0.1);
+    font-size: 1.4rem;
     transition: box-shadow 0.3s;
+    box-shadow: 0 0 12px rgba(15, 158, 153, 0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    color: #fff;
   }
-
-  .flip-box:hover .flip-box-front,
-  .flip-box:hover .flip-box-back {
-    box-shadow: 0 0 25px rgba(15, 158, 153, 0.4);
-  }
-
+  
   .flip-box-back {
+    background-color: #fff;
+    color: #0f9e99;
     transform: rotateY(180deg);
   }
-
+  
+  .flip-box-front {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Add image + gradient overlay to make text readable */
+  .math-front {
+    background-image: url('/IMAGES/1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .science-front {
+    background-image: url('/IMAGES/2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .english-front {
+    background-image: url('/IMAGES/3.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .history-front {
+    background-image: url('/IMAGES/4.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .geography-front {
+    background-image: url('/IMAGES/5.png');
+  }
+  
+  /* Responsive */
   @media (max-width: 768px) {
     .flip-box {
-      height: 160px;
+      height: 240px;
     }
   }
-
+  
   @media (max-width: 576px) {
     .flip-box {
-      height: 220px; /* Increase height on mobile */
+      height: 220px;
     }
-
+  
     .flip-box-front,
     .flip-box-back {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
+  
 
 
 
 /* Course video */
-.course-vedio{
-    margin: 0 30px;
+.course-vedio {
+  margin: 0 30px;
+  background-color: #efe9e0;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid #0f9e99;
 }
+
+/* Heading style */
+.course-vedio h2 {
+  color: #0f9e99;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Accordion Button Styling */
+.accordion-button {
+  background-color: #fff;
+  color: #0f9e99;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 18px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1.5px solid #0f9e99;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0f9e99;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion body */
+.accordion-body {
+  /* background-color: #fff; */
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  color: #333;
+  border: 1px solid #0f9e99;
+  border-top: none;
+}
+
+/* List inside body */
+.accordion-body ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.accordion-body li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Smooth transition */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(15, 158, 153, 0.3);
+}
+.accordion-item{
+  background-color: transparent;
+}
+
 
 
 

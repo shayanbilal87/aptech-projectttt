@@ -250,18 +250,18 @@ max-width: 100%; /* Responsive */
     gap: 100px;
 }
 
-
 /* Flip Box */
 .flip-box {
     width: 400px;
-    height: 40vh;
+    min-height: 40vh;
     perspective: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     border-radius: 8px;
     margin-bottom: 7vh;
     background: #000;
+    transition: height 0.3s ease-in-out;
 }
 
 /* Inner flip effect */
@@ -290,18 +290,17 @@ max-width: 100%; /* Responsive */
     align-items: center;
     backface-visibility: hidden;
     border-radius: inherit;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Front Side */
 .flip-box-front {
-    /* background-color: #0f9e99; */
     background-image: url("IMAGES/flipbox.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-
-    
-    color: #efe9e0 ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #efe9e0;
     font-size: 20px;
     font-weight: bold;
     z-index: 2;
@@ -315,14 +314,13 @@ background-repeat: no-repeat;
     flex-direction: column;
     z-index: 1;
     border: 2px solid #0f9e99;
-    padding: 20px;
+    overflow-y: auto;
 }
 
-/* Flip Box Media Query For Responsivnes */
+/* Flip Box Media Query For Responsiveness */
 @media (max-width: 1200px) {
     .flip-box {
         width: 60%;
-        height: 55vh;
     }
 }
 
@@ -333,10 +331,8 @@ background-repeat: no-repeat;
     }
     .flip-box {
         width: 70%;
-        height: 50vh;
     }
 }
-
 
 @media (max-width: 768px) {
     #courses .row {
@@ -346,38 +342,31 @@ background-repeat: no-repeat;
 
     .flip-box {
         width: 100% !important;
-        height: auto;
-        margin-bottom: 30px;
+        min-height: auto;
     }
 
     .flip-box-inner {
-        height: 100%;
+        height: auto;
     }
 
     .flip-box-front, .flip-box-back {
-        height: 100%;
+        height: auto;
+        flex-direction: column;
         padding: 20px;
     }
-    
 
     .flip-box-back p {
         font-size: 16px;
+        line-height: 1.5;
     }
 }
 
 @media (max-width: 576px) {
-    
     .flip-box {
         width: 100% !important;
-        height: 40vh;
-    }
-
-    .flip-box-inner {
-        height: 100%;
     }
 
     .flip-box-front, .flip-box-back {
-        height: 100%;
         padding: 15px;
     }
 

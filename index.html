@@ -129,6 +129,7 @@
 
 
 
+
 <!-- Cool Numbers Counter -->
 <section class="cool-numbers py-5">
     <div class="container text-center">
@@ -339,7 +340,17 @@
     </div>
 </footer>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.flip-box').forEach(box => {
+            const front = box.querySelector('.flip-box-front');
+            const back = box.querySelector('.flip-box-back');
+            const height = Math.max(front.scrollHeight, back.scrollHeight);
+            box.style.height = `${height}px`;
+        });
+    });
+    </script>
+    
 
 </body>
 </html>
